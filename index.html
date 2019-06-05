@@ -14,13 +14,45 @@
     <div class="container">
 
       
-      <div id="urChar">
-        <button id="playChar" class="player" value="obi"></button>
-        <button id="playChar" class="player" value="luke"></button>
-        <button id="playChar" class="player" value="char3"></button>
-        <button id="playChar" class="player" value="char4"></button>
+      <div id="urChar" class="row card-body">
+        
+        <button id="obi" class="player btn btn-primary card-body" value="obi">
+          <h5 class="card-title">Obi-Wan Kenobi</h5>
+          <div class="progress"> <!--need to update width values, value now, the span-->
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+              aria-valuemax="100"><span class="obiHP">100</span>
+            </div>
+          </div>
+        </button>
+        
+        <button id="luke" class="player btn btn-primary card-body" value="luke">
+          <h5 class="card-title">Luke SkyWalker</h5>
+          <div class="progress">
+            <!--need to update width values, value now, the span-->
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+              aria-valuemax="100"><span class="lukeHP">120</span>
+            </div>
+        </button>
+        
+        <button id="vader" class="player btn btn-primary card-body" value="vader">
+          <h5 class="card-title">Darth Vader</h5>
+          <div class="progress">
+            <!--need to update width values, value now, the span-->
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+              aria-valuemax="100"><span class="vaderHP">140</span>
+            </div>
+        </button>
+        
+        <button id="jarjar" class="player btn btn-primary card-body" value="jarjar">
+          <h5 class="card-title">Jar Jar Binks</h5>
+          <div class="progress">
+            <!--need to update width values, value now, the span-->
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+              aria-valuemax="100"><span class="jarjar">160</span>
+            </div>
+        </button>
       </div>
-      <div id="enemyChar">
+      <div id="enemyChar" class="row card-body">
         <!-- transfer remaining chars to enemy -->
       </div>
       
@@ -28,25 +60,12 @@
     </div>
 
 
+
+    
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
     <!-- Optional JavaScript -->
-    <script src="assets/javascript/game.js">
+    <script src="assets/javascript/game.js"></script>
     
-    $(document).ready(function () {
-
-        $(".player").on("click", function () {
-          var usrChoice = $(this).val();
-          console.log(usrChoice);
-
-        });
-
-
-
-      });
-    
-    </script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
