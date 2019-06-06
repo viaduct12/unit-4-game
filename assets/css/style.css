@@ -1,0 +1,13 @@
+body{
+  background-image: url("../images/1280x720-2997599-star-wars-death-star-at-at-space-night-sky___mixed-wallpapers.jpg");
+  background-size: cover;
+}
+
+h2{
+  color: salmon;
+}
+
+/* img{
+  width: 100px;
+  height: 100px;
+} */
